@@ -1,0 +1,21 @@
+local lib = loadstring(game:HttpGet("https://bit.ly/baconlib"))()
+local version, changelog = lib:GetInfo()
+local window = lib:CreateWindow("AL Gui :trol:")
+local label = lib:CreateLabel(window, "Main")
+loadstring(game:HttpGet("https://pastebin.com/raw/AEYSHn1p"))()
+
+local button = lib:CreateButton(window, "to map", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(19, -43, -46))
+end)
+
+local button = lib:CreateButton(window, "to custom", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-22762, 320, 86569))
+end)
+
+local button = lib:CreateButton(window, "godmode", function()
+    fireclickdetector(game:GetService("Workspace").abandonedmachine.ClickDetector)
+end)
+
+local button = lib:CreateButton(window, "reset", function()
+    game.Players.LocalPlayer.Character.Torso:Remove()
+end)
