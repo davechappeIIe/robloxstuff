@@ -2,7 +2,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroe
 
 local main = library:Window("Main")
 local util = library:Window("Utility")
-loadstring(game:HttpGet("https://pastebin.com/raw/AEYSHn1p"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davechappeIIe/robloxstuff/main/skycastle"))()
 
 main:Button("to map", function()
     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(19, -43, -46))
