@@ -2,14 +2,11 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroe
 
 local main = library:Window("Main")
 local util = library:Window("Utility")
+local tps = library:Window("Teleports")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davechappeIIe/robloxstuff/main/skycastle"))()
 
 main:Button("to map", function()
     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(19, -43, -46))
-end)
-
-main:Button("to custom", function()
-    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-22762, 320, 86569))
 end)
 
 main:Button("reset", function()
@@ -28,7 +25,11 @@ util:Button("Autopickup Items", function()
     end
 end)
 
-
 util:Label("Credits to Intrer#0421 for UI Lib", Color3.fromRGB(127, 143, 166))
 util:Label("Credits to pa#3697 for scripts", Color3.fromRGB(127, 143, 166))
 library:Keybind("G")
+
+tps:Label("ty for the map arch :)",Color3.fromRGB(127, 143, 166))
+tps:Button("Skycastle", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(151, 9535, -34220))
+end)
