@@ -5,7 +5,7 @@ local util = library:Window("Utility")
 local tps = library:Window("Teleports")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davechappeIIe/robloxstuff/main/skycastle"))()
 
-main:Button("to map", function()
+tps:Button("main map", function()
     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(19, -43, -46))
 end)
 
